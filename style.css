@@ -1,0 +1,203 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+*{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    font-size:12px;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+}
+/*--------------------------------------------*/
+/*------------------- HEADER -----------------*/
+/*--------------------------------------------*/
+
+.header-inner{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(30, 32, 33,0.8);
+}
+.logo{
+    color: white;
+    font-size: 3rem;
+}
+.logo span{
+    color: #00cdce;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 30px;
+    padding: 0px 15px 10px 15px;
+    border-bottom: 2px solid white;
+    transition: all 2s;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:1rem;
+    
+}
+nav ul li:hover,
+nav ul li:active {
+    
+    border-bottom:none;
+}
+nav ul li a:hover{
+    color: #00cdce;
+    text-decoration: none;
+}
+ul{
+    margin-bottom:0px;
+}
+/* slideshow */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+/*--------------------------------------------*/
+/*------------------- About -----------------*/
+/*--------------------------------------------*/
+#about{
+    padding: 4% 15%;
+}
+.about-us-inner{
+    text-align: center;
+}
+.about-us-icon{
+    display:flex;
+}
+.about-us-icon li{
+    list-style: none;
+}
+.about-us-icon li i{
+    border:1px solid gray;
+    border-radius:50%; 
+    padding:20px;
+}
+/*--------------------------------------------*/
+/*------------------- Stats -----------------*/
+/*--------------------------------------------*/
+#stats{
+    
+    background-color: #00cdce;
+}
+.stats-inner{
+    padding: 4% 15%;
+    
+}
+.stats-inner ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stats-inner ul li{
+    list-style: none;
+}
+.stats-inner ul li span{
+    color: white;
+    font-size:2rem ;
+}
+/*--------------------------------------------*/
+/*------------------- Blog -----------------*/
+/*--------------------------------------------*/
+#blog{
+    padding:3% 15%;
+}
+.blog-inner{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:15px;
+}
+.blog-inner div img{
+    width: 100%;
+}
+.blog-inner div{
+    background-color: #efefef;
+    border-top:5px solid #00cdce;
+}
+
+/*--------------------------------------------*/
+/*------------------- Video -----------------*/
+/*--------------------------------------------*/
+.video-inner{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    height: 400px;
+}
+.video-content {
+    background-image: url(./images/b4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.video-content-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-38px, -23px);
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgb(0, 205, 206,0.5);
+}
+.video-content-icon i{
+    font-size:50px;
+    color:white;
+}
+.video-infor{
+    background-color: #00cdce;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-infor-details{
+    text-align: center;
+}
+/*--------------------------------------------*/
+/*------------------- Portfolio -----------------*/
+/*--------------------------------------------*/
+#portfolio{
+    padding:3% 15%;
+}
+#portfolio h1{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:15px;
+    grid-row-gap:15px;
+}
+.portfolio-grid-item{
+    position: relative;
+}
+.portfolio-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform:translate(6%,6%);
+  
+}
+.portfolio-overlay h3{
+    color:#00cdce;
+    border-top:1px solid #00cdce;
+    border-bottom:1px solid #00cdce; 
+   
+}
+.portfolio-overlay p{
+    color:white;
+}
+.portfolio-grid-item:hover .portfolio-overlay{
+    opacity:1;
+}
