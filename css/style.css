@@ -1,0 +1,495 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+*{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    font-size:12px;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+}
+/*--------------------------------------------*/
+/*--------------- PUBLISH CLASS ---------------*/
+/*--------------------------------------------*/
+button{
+    background-color: black;
+    font-size: 18px;
+    color:#00cdce ;
+    padding:8px 25px;
+    border: none;
+    transition: all 0.5s;
+
+}
+button:hover{
+    color:white;
+}
+/*--------------------------------------------*/
+/*------------------- HEADER -----------------*/
+/*--------------------------------------------*/
+
+.header-inner{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(30, 32, 33,0.8);
+}
+.logo{
+    color: white;
+    font-size: 3rem;
+}
+.logo span{
+    color: #00cdce;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 30px;
+    padding: 0px 15px 10px 15px;
+    border-bottom: 2px solid white;
+    transition: all 2s;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:1rem;
+    
+}
+nav ul li:hover,
+nav ul li:active {
+    
+    border-bottom:none;
+}
+nav ul li a:hover{
+    color: #00cdce;
+    text-decoration: none;
+}
+ul{
+    margin-bottom:0px;
+}
+/* slideshow */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+/*--------------------------------------------*/
+/*------------------- About -----------------*/
+/*--------------------------------------------*/
+#about{
+    padding: 4% 15%;
+}
+.about-us-inner{
+    text-align: center;
+}
+.about-us-icon{
+    display:flex;
+}
+.about-us-icon li{
+    list-style: none;
+    margin: 0px 10px;
+    color: #7f7777;
+    line-height: 30px;
+}
+.about-us-icon li i{
+    border:1px solid gray;
+    border-radius:50%; 
+    padding:30px;
+    font-size: 20px;
+    color: black;
+    transition: all 0.5;
+    margin-bottom: 20px;
+}
+.about-us-icon li p{
+    font-size: 1rem;
+}
+.about-us-icon li i:hover{
+    background-color: #00cdce;
+    color: white;
+}
+.about-us-inner h1{
+    font-size: 4rem;
+    padding:0px 0px 30px 0px;
+}
+.about-us-inner h4{
+    font-size: 2rem;
+    color:#00cdce
+}
+.about-us-inner p{
+    font-size: 1rem;
+    line-height: 30px;
+}
+/*--------------------------------------------*/
+/*------------------- Stats -----------------*/
+/*--------------------------------------------*/
+#stats{
+    
+    background-color: #00cdce;
+}
+.stats-inner{
+    padding: 4% 15%;
+    
+}
+.stats-inner h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.stats-inner ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stats-inner ul li{
+    list-style: none;
+}
+.stats-inner ul li span{
+    color: white;
+    font-size:4rem ;
+}
+.stats-inner ul li p{
+    font-size:2rem ;
+    text-align: center;
+}
+/*--------------------------------------------*/
+/*------------------- Blog -----------------*/
+/*--------------------------------------------*/
+#blog{
+    padding:3% 15%;
+}
+#blog h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4%;
+}
+.blog-inner{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:15px;
+}
+.blog-inner div img{
+    width: 100%;
+}
+.blog-inner div{
+    background-color: #efefef;
+    border-top:5px solid #00cdce;
+}
+.blog-details{
+    padding: 15px;
+}
+.blog-details h5{
+    color:#00cdce;
+    font-size: 1.5rem;
+}
+.blog-details p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: thin;
+}
+/*--------------------------------------------*/
+/*------------------- Video -----------------*/
+/*--------------------------------------------*/
+.video-inner{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    height: 400px;
+}
+.video-content {
+    background-image: url(../images/b4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.video-content-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-38px, -23px);
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgb(0, 205, 206,0.5);
+}
+.video-content-icon i{
+    font-size:50px;
+    color:white;
+}
+.video-infor{
+    background-color: #00cdce;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-infor-details{
+    text-align: center;
+    padding: 0px 10%;
+}
+.video-infor-details h2{
+    font-size: 3rem;
+}
+.video-infor-details p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 1rem;
+}
+/*--------------------------------------------*/
+/*------------------- Portfolio -----------------*/
+/*--------------------------------------------*/
+#portfolio{
+    padding:3% 15%;
+}
+#portfolio h1{
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 3rem;
+}
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:15px;
+    grid-row-gap:15px;
+}
+.portfolio-grid-item{
+    position: relative;
+}
+.portfolio-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform:translate(6%,6%);
+}
+.portfolio-overlay h3{
+    color:#00cdce;
+    border-top:1px solid #00cdce;
+    border-bottom:1px solid #00cdce; 
+}
+.portfolio-overlay p{
+    color:white;
+}
+.portfolio-grid-item:hover .portfolio-overlay{
+    opacity:1;
+}
+/*--------------------------------------------*/
+/*------------------- Subscribe -----------------*/
+/*--------------------------------------------*/
+#sub{
+    background-color: #00cdce;
+    padding: 0 25%;
+}
+.sub-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-inner-details{
+    text-align: center;
+}
+.sub-inner-details h1{
+    padding: 50px 0px;
+    font-size: 3rem;
+}
+.sub-inner-details p{
+    font-size: 1rem;
+    color: white;
+}
+.sub-inner-details input{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: block;
+    outline:none;
+    outline-width: 0;
+    outline-style: none;
+}
+.sub-inner-details button{
+    padding: 8px 49px;
+    border: none;
+    margin: 20px 0px 50px 0px;
+    color: white;
+    font-size: 18px;
+}
+.sub-inner-details button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+}
+/*--------------------------------------------*/
+/*----------------- Our Agents ---------------*/
+/*--------------------------------------------*/
+.our{
+    padding: 0 15%;
+    margin-bottom: 4%;
+}
+.our h1{
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 3rem;
+}
+.our-inner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap:25px ;
+}
+.our-inner-details img{
+    width: 100%;
+}
+.our-details-banner{
+    background-color: grey;
+    text-align: center;
+    height: 100px;
+    padding-top: 15px;
+}
+.our-details-banner p{
+    margin: 0;
+}
+.our-details-banner ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-details-banner ul li{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    margin: 0px 3px;
+    list-style: none;
+}
+.our-details-banner .facebook:hover{
+    background-color: #3b5998;
+}
+
+.our-details-banner .twitter:hover{
+    background-color: #55acee;
+}
+.our-details-banner .rss:hover{
+    background-color: #f26522;
+}
+/*--------------------------------------------*/
+/*------------------- Maps ------------------*/
+/*--------------------------------------------*/
+#maps{
+    padding: 15px;
+    background-color: grey;
+    border: 2px solid #00cdce; ;
+}
+.maps-inner iframe{
+    width: 100%;
+}
+/*--------------------------------------------*/
+/*------------------- Contact Us ---------------*/
+/*--------------------------------------------*/
+#contact{
+    padding:3% 15%;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:25px ;
+}
+.contact-inner h1{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+.form-left input{
+    width: 100%;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    outline-width:0;
+    outline-style: none;
+    background: rgb(239, 239, 239);
+    border-bottom: 3px solid rgb(0, 0, 0,0.3);
+    transition: all 1s;
+}
+.form-left input:hover{
+    border-bottom: 3px solid black;
+}
+.form-right  textarea{
+    width: 100%;
+    border: none;
+    padding:0px 0px 10px 10px;
+    outline: none;
+    outline-width:0;
+    outline-style: none;
+    resize: none;
+    margin-bottom: 19px;
+    background: rgb(239, 239, 239);
+    border-bottom: 3px solid rgb(0, 0, 0,0.3);
+    transition: all 1s;
+}
+.form-right textarea:hover{
+    border-bottom: 3px solid black;
+}
+.form-right  textarea::placeholder{
+    padding-top: 19%;
+    
+}
+.form-right button{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: black;
+}
+/*--------------------------------------------*/
+/*------------------- Footer---------------*/
+/*--------------------------------------------*/
+footer{
+    background-color:#00cdce ;
+}
+.footer-inner{
+    padding: 3% 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-inner p{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.footer-inner span{
+    color: red;
+}
+.footer-inner ul{
+    display: flex;
+}
+.footer-inner ul li{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: solid 1px #FFF;
+    background: none;
+    color: #FFF;
+    margin: 0px 3px;
+    list-style: none;
+}
+.footer-inner ul li i{
+    font-size: 18px
+}
+.footer-inner ul li  .fa-facebook-f:hover{
+    color:#3b5998;
+}
+.footer-inner ul li  .fa-twitter:hover{
+    color:#55acee;
+}
+.footer-inner ul li .fa-rss:hover{
+    color:#f26522;
+}
+.footer-inner ul li  .fa-vk:hover{
+    color:#3b5998;
+}
