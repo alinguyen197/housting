@@ -265,11 +265,26 @@ ul{
     width: 90%;
     height: 90%;
     transform:translate(6%,6%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
 }
-.portfolio-overlay h3{
+.over-details h3{
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-weight: thin;
     color:#00cdce;
-    border-top:1px solid #00cdce;
-    border-bottom:1px solid #00cdce; 
+    border-top: 1px solid #00cdce;
+    border-bottom: 1px solid #00cdce;
+}
+.over-details p{
+    padding: 20px 0px;
+    font-size: 1rem;
+}
+.over-details{
+    width: 80%;
 }
 .portfolio-overlay p{
     color:white;
@@ -342,18 +357,27 @@ ul{
     width: 100%;
 }
 .our-details-banner{
-    background-color: grey;
+    background: rgba(0, 0, 0, 0.79);
     text-align: center;
-    height: 100px;
+    height: 150px;
     padding-top: 15px;
 }
 .our-details-banner p{
     margin: 0;
+    color: #00cdce;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.our-details-banner span{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: white;
 }
 .our-details-banner ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px 0px;
 }
 .our-details-banner ul li{
     height: 30px;
@@ -362,7 +386,7 @@ ul{
     border: solid 2px #FFF;
     background: none;
     color: #FFF;
-    margin: 0px 3px;
+    margin: 0px 9px;
     list-style: none;
 }
 .our-details-banner .facebook:hover{
