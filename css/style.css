@@ -11,6 +11,9 @@ body{
     overflow-x: hidden;
     overflow-wrap: anywhere;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*--------------------------------------------*/
 /*--------------- PUBLISH CLASS ---------------*/
 /*--------------------------------------------*/
@@ -37,6 +40,9 @@ button:hover{
     align-items: center;
     height: 60px;
     background-color: rgb(30, 32, 33,0.8);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 .logo{
     color: white;
@@ -52,6 +58,7 @@ nav ul li{
     padding: 0px 15px 10px 15px;
     border-bottom: 2px solid white;
     transition: all 2s;
+    cursor: pointer;
 }
 nav ul li a{
     color: white;
@@ -72,6 +79,16 @@ ul{
     margin-bottom:0px;
 }
 /* slideshow */
+.carousel-caption {
+    top: 0;
+    margin-top: 22%;
+}
+.carousel-caption h4{
+    font-size: 4rem;
+}
+.carousel-caption p{
+    font-size: 1.5rem;
+}
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
@@ -144,10 +161,12 @@ ul{
 }
 .stats-inner ul li{
     list-style: none;
+    width: 100%;
+    text-align: center;
 }
 .stats-inner ul li span{
     color: white;
-    font-size:4rem ;
+    font-size:4rem ; 
 }
 .stats-inner ul li p{
     font-size:2rem ;
@@ -174,6 +193,9 @@ ul{
 }
 .blog-inner div{
     background-color: #efefef;
+    
+}
+.blog-inner div img{
     border-top:5px solid #00cdce;
 }
 .blog-details{
@@ -188,6 +210,44 @@ ul{
     letter-spacing: 1px;
     font-weight: thin;
 }
+
+/*-- bootstrap-pop-up --*/
+.modal-header {
+    font-size: 2.6em;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: #00cdce;
+}
+.close {
+    opacity: 1;
+}
+.modal-body p {
+    font-size: 15px;
+    color: #999;
+    text-align: left;
+    padding: 2em 2em 1em;
+    margin: 0 !important;
+    line-height: 2em;
+}
+.modal-body {
+    padding: 22px;
+}
+.modal-body img {
+    width: 100%;
+}
+.modal-content {
+    border-radius: 0;
+}
+button.close {
+    font-size: 1.5em;
+    color: #a0260f;
+    outline: none;
+}
+/*-- //bootstrap-pop-up --*/
+
+
 /*--------------------------------------------*/
 /*------------------- Video -----------------*/
 /*--------------------------------------------*/
@@ -517,3 +577,31 @@ footer{
 .footer-inner ul li  .fa-vk:hover{
     color:#3b5998;
 }
+
+/* BOTTOM TO TOP */
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 1%;
+    overflow: hidden;
+    z-index: 999;
+    width: 64px;
+    height: 64px;
+    border: none;
+    text-indent: 100%;
+    background:url(../images/arrowup.png)  no-repeat 0px 0px;
+}
+#toTopHover {
+     width: 64px;
+    height: 64px; 
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0); 
+    color: red;
+}
+/*-- //bottom-to-top --*/
