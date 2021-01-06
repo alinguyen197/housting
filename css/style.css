@@ -10,6 +10,8 @@ body{
     font-size:12px;
     overflow-x: hidden;
     overflow-wrap: anywhere;
+    font-family: 'Montserrat', sans-serif;
+
 }
 html{
     scroll-behavior: smooth;
@@ -200,6 +202,12 @@ ul{
 }
 .blog-details{
     padding: 15px;
+}
+.blog-details a{
+    text-decoration: none;
+}
+.blog-details a h5:hover{
+    color: black;
 }
 .blog-details h5{
     color:#00cdce;
@@ -422,6 +430,9 @@ button.close {
     height: 150px;
     padding-top: 15px;
 }
+.our-details-banner p:hover{
+    color:white;
+}
 .our-details-banner p{
     margin: 0;
     color: #00cdce;
@@ -594,7 +605,7 @@ footer{
     background:url(../images/arrowup.png)  no-repeat 0px 0px;
 }
 #toTopHover {
-     width: 64px;
+    width: 64px;
     height: 64px; 
     display: block;
     overflow: hidden;
@@ -602,6 +613,5 @@ footer{
     opacity: 0;
     -moz-opacity: 0;
     filter: alpha(opacity=0); 
-    color: red;
 }
 /*-- //bottom-to-top --*/
